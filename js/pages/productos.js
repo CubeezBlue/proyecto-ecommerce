@@ -91,6 +91,7 @@ btnVerCarrito.addEventListener("click", () => {
                 if (index !== -1) {
                     carrito.splice(index, 1);
                     localStorage.setItem("carrito", JSON.stringify(carrito));
+
                     carritoContenedor.removeChild(divProducto);
                     actualizarVistaCarrito();
                 }
