@@ -1,0 +1,419 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  height: 100%; }
+
+body {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  min-height: 100%;
+  background-color: #151212; }
+
+header .header-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f5f5f5;
+  padding-right: 1rem;
+  padding-left: 1rem; }
+  header .header-1 .logo img {
+    height: 100px;
+    width: 100px; }
+  header .header-1 .sociales-header {
+    display: flex;
+    gap: 2rem; }
+    header .header-1 .sociales-header svg {
+      width: 30px;
+      height: 30px; }
+  header .header-1 .carrito {
+    display: flex;
+    gap: 2rem; }
+    header .header-1 .carrito svg {
+      width: 25px;
+      height: 30px; }
+    header .header-1 .carrito a {
+      text-decoration: none;
+      color: #151212; }
+
+header .header-2 {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 1rem;
+  padding-right: 3rem;
+  background-color: #151212;
+  border-bottom: 1px solid #f5f5f5; }
+  header .header-2 a {
+    text-decoration: none;
+    color: #f5f5f5; }
+  header .header-2 .navbar-2 {
+    width: 300px;
+    height: 100%; }
+    header .header-2 .navbar-2 a:hover {
+      scale: 1.1;
+      transition: 1s; }
+    header .header-2 .navbar-2 nav {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      height: 100%;
+      padding: 1rem; }
+    header .header-2 .navbar-2 .nav-drop {
+      background-color: #151212; }
+  header .header-2 .search {
+    min-height: 100%; }
+    header .header-2 .search input {
+      height: 100%;
+      background-color: #383737;
+      width: 300px;
+      border: none;
+      padding: 1rem; }
+    header .header-2 .search button {
+      width: 30px;
+      height: 99%;
+      background-color: #383737;
+      color: #f5f5f5;
+      border: none;
+      padding: 0.1rem;
+      padding-right: 0.5rem;
+      margin-left: -1rem; }
+
+header .carrusel {
+  max-height: 700px; }
+  header .carrusel img {
+    max-height: 700px; }
+
+.contenedor {
+  max-width: 1250px;
+  margin: auto;
+  padding: 1rem; }
+
+.box-info {
+  width: 70%;
+  height: 130px;
+  background-color: #f5f5f5;
+  margin: 2rem auto 2rem auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  align-items: center;
+  border-radius: 1rem; }
+  .box-info .info-box {
+    display: flex;
+    gap: 1rem;
+    width: 30%;
+    font-weight: bold;
+    color: #151212; }
+  .box-info .icon-box svg {
+    width: 40px;
+    height: 40px; }
+
+.titulo-productos-inicio {
+  color: #f5f5f5; }
+
+.all-productos-inicio {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 5rem; }
+
+.producto {
+  background-color: #383737;
+  width: 300px;
+  height: 520px;
+  color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem; }
+  .producto .desc-producto {
+    padding-left: 1rem; }
+  .producto img {
+    min-width: 100%;
+    min-height: 350px;
+    max-height: 350px; }
+  .producto .btn-productos {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #f5f5f5;
+    width: 100%;
+    height: 30px; }
+    .producto .btn-productos a {
+      color: #151212; }
+    .producto .btn-productos a:hover {
+      color: #151212; }
+
+.btn-all-productos {
+  text-align: center;
+  width: 100%; }
+  .btn-all-productos a {
+    color: #151212;
+    background-color: teal;
+    border: 1px solid #151212;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-weight: bold; }
+
+.categorias-inicio {
+  display: flex;
+  gap: 3rem;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5rem; }
+  .categorias-inicio .categoria {
+    max-width: 300px;
+    max-height: 410px; }
+    .categorias-inicio .categoria img {
+      min-width: 300px;
+      max-height: 300px; }
+    .categorias-inicio .categoria p {
+      display: flex;
+      color: #f5f5f5;
+      text-align: center;
+      background-color: #383737;
+      height: 50px;
+      justify-content: center;
+      align-items: center; }
+
+footer {
+  margin-top: auto;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  color: #151212;
+  background-color: #f5f5f5; }
+  footer .footer {
+    display: flex;
+    justify-content: space-evenly; }
+    footer .footer .icon-footer {
+      display: flex;
+      gap: 2rem; }
+      footer .footer .icon-footer svg {
+        width: 30px;
+        height: 30px; }
+    footer .footer .nav-footer .barra-footer {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      align-items: start; }
+      footer .footer .nav-footer .barra-footer a {
+        color: #151212; }
+    footer .footer h4 {
+      font-size: x-large;
+      font-weight: bold; }
+    footer .footer .medios-de-pago {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      width: 300px;
+      margin-top: 2rem; }
+    footer .footer .form-index {
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem; }
+      footer .footer .form-index input {
+        border: 1px solid #151212;
+        background-color: #383737;
+        height: 40px;
+        padding: 1rem; }
+  footer .derechos {
+    background-color: #383737;
+    color: #f5f5f5;
+    text-align: center;
+    height: 50px;
+    padding-top: 1rem; }
+
+.productos {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap; }
+
+h2 {
+  color: #f5f5f5;
+  text-align: center;
+  padding: 3rem;
+  font-size: xx-large;
+  font-weight: bold; }
+
+.bg-carrito-html {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  background-color: rgba(0, 0, 0, 0.541);
+  z-index: 1000; }
+  .bg-carrito-html h3 {
+    color: #f5f5f5; }
+  .bg-carrito-html .btn-cerrar {
+    position: fixed;
+    border: none;
+    top: 0;
+    margin-top: 2rem;
+    margin-left: -37rem; }
+    .bg-carrito-html .btn-cerrar .close {
+      width: 40px;
+      height: 40px;
+      position: fixed;
+      color: #f5f5f5; }
+  .bg-carrito-html .bg-carrito {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 70vh;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 3rem 5rem;
+    overflow: auto;
+    align-items: center; }
+    .bg-carrito-html .bg-carrito .productos-carrito {
+      display: flex;
+      flex-direction: column;
+      margin-top: 2rem;
+      gap: 2rem; }
+      .bg-carrito-html .bg-carrito .productos-carrito .producto-carrito {
+        display: flex;
+        min-width: 100%;
+        justify-content: space-between;
+        height: auto;
+        color: #f5f5f5; }
+        .bg-carrito-html .bg-carrito .productos-carrito .producto-carrito .desc-producto {
+          width: 50%; }
+        .bg-carrito-html .bg-carrito .productos-carrito .producto-carrito img {
+          height: 100%;
+          width: 30%; }
+        .bg-carrito-html .bg-carrito .productos-carrito .producto-carrito .btn-productos {
+          width: 25px;
+          height: 25px; }
+          .bg-carrito-html .bg-carrito .productos-carrito .producto-carrito .btn-productos .btn-eliminar {
+            color: #f5f5f5; }
+    .bg-carrito-html .bg-carrito .btn-comprar {
+      background-color: teal;
+      border: none;
+      color: #f5f5f5;
+      min-height: 50px;
+      width: 100%;
+      margin-top: 1rem; }
+    .bg-carrito-html .bg-carrito .total-carrito {
+      margin-top: 1rem;
+      color: #f5f5f5; }
+
+.contacto {
+  display: flex;
+  gap: 4rem; }
+  .contacto .info-contacto {
+    margin-top: 1rem;
+    min-width: 50%;
+    margin: auto;
+    padding-left: 8rem; }
+    .contacto .info-contacto form {
+      display: grid;
+      grid-template-columns: 2;
+      grid-template-rows: 4;
+      column-gap: 3rem;
+      row-gap: 2rem;
+      max-width: 70%; }
+    .contacto .info-contacto .form-apellido {
+      grid-row: 1;
+      grid-column: 2; }
+    .contacto .info-contacto .form-email {
+      grid-row: 2;
+      grid-column: span 2; }
+    .contacto .info-contacto .form-consulta {
+      grid-row: 3;
+      grid-column: span 2; }
+      .contacto .info-contacto .form-consulta #consulta {
+        width: 100%;
+        border-radius: 1rem;
+        padding: 1rem; }
+    .contacto .info-contacto .btn-form {
+      grid-row: 4;
+      grid-column: span 2;
+      height: 50px;
+      border: none;
+      border-radius: 1rem;
+      background-color: teal;
+      margin-bottom: 2rem; }
+    .contacto .info-contacto input {
+      width: 100%;
+      height: 40px;
+      border-radius: 1rem;
+      padding: 1rem; }
+    .contacto .info-contacto label {
+      color: #f5f5f5; }
+  .contacto .contenedor-mapa {
+    min-width: 50%;
+    height: 600px; }
+    .contacto .contenedor-mapa .mapa {
+      width: 600px;
+      height: 522px;
+      margin: auto;
+      margin-top: 2rem; }
+
+.main-login .bg-login {
+  display: flex;
+  background-color: #383737;
+  margin-top: 0.1px; }
+  .main-login .bg-login h3 {
+    margin: auto;
+    padding: 2rem;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    color: #f5f5f5;
+    font-size: xx-large;
+    font-weight: bolder; }
+  .main-login .bg-login .login {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-left: 5rem;
+    color: #f5f5f5; }
+    .main-login .bg-login .login .inp-login {
+      display: flex;
+      flex-direction: column;
+      padding-left: 2rem; }
+      .main-login .bg-login .login .inp-login label {
+        padding-bottom: 1rem;
+        padding-left: 0.5rem; }
+      .main-login .bg-login .login .inp-login input {
+        width: 70%;
+        border-radius: 1.3rem;
+        height: 45px;
+        padding: 1rem;
+        border-style: none;
+        border: 1px solid black; }
+    .main-login .bg-login .login .botones .boton {
+      display: flex;
+      margin: auto;
+      width: 100px;
+      height: 50px;
+      border-style: none;
+      border: 2px solid #f5f5f5;
+      border-radius: 2rem;
+      cursor: pointer;
+      justify-content: center;
+      align-items: center;
+      color: #f5f5f5; }
+  .main-login .bg-login .bg-img-login {
+    width: 50%;
+    min-height: 100%; }
+    .main-login .bg-login .bg-img-login .img-login {
+      width: 100%;
+      height: 722.9px;
+      min-height: 100%;
+      background-image: url(../../img/diseno-logotipo-clasico-vintage-retro-label-badge-ropa-tela_668007-371-transformed.jpeg);
+      background-size: cover;
+      background-position: center; }
+
+footer {
+  margin-top: 0; }

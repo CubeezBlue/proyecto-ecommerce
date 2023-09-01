@@ -1,0 +1,95 @@
+@import "../utility/colors.scss";
+//Productos
+.productos {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+h2 {
+    color: $blanco;
+    text-align: center;
+    padding: 3rem;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.bg-carrito-html {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    background-color: rgba(0, 0, 0, 0.541);
+    z-index: 1000;
+    h3 {
+        color: $blanco;
+    }
+    .btn-cerrar {
+        position: fixed;
+        border: none;
+        top: 0;
+        margin-top: 2rem;
+        margin-left: -37rem;
+        .close {
+            width: 40px;
+            height: 40px;
+            position: fixed;
+            color: $blanco;
+        }
+    }
+    .bg-carrito {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 70vh;
+        height: 100%;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 3rem 5rem;
+        overflow: auto;
+        align-items: center;
+        .productos-carrito {
+            display: flex;
+            flex-direction: column;
+            margin-top: 2rem;
+            gap: 2rem;
+            .producto-carrito {
+                display: flex;
+                min-width: 100%;
+                justify-content: space-between;
+                height: auto;
+                color: $blanco;
+                .desc-producto {
+                    width: 50%;
+                }
+                img {
+                    height: 100%;
+                    width: 30%;
+                }
+                .btn-productos {
+                    width: 25px;
+                    height: 25px;
+                    .btn-eliminar {
+                        color: $blanco;
+                    }
+                }
+            }
+        }
+        .btn-comprar {
+            background-color: teal;
+            border: none;
+            color: $blanco;
+            min-height: 50px;
+            width: 100%;
+            margin-top: 1rem;
+        }
+        .total-carrito {
+            margin-top: 1rem;
+            color: $blanco;
+        }
+    }
+}

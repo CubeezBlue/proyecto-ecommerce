@@ -1,0 +1,73 @@
+@import "../utility/colors.scss";
+//Contenido Principal
+.main-login {
+    .bg-login {
+        display: flex;
+        background-color: #383737;
+        margin-top: 0.1px;
+        h3 {
+            margin: auto;
+            padding: 2rem;
+            margin-top: 30px;
+            margin-bottom: 50px;
+            color: $blanco;
+            font-size: xx-large;
+            font-weight: bolder;
+        }
+        .login {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            padding-left: 5rem;
+            color: $blanco;
+            .inp-login {
+                display: flex;
+                flex-direction: column;
+                padding-left: 2rem;
+                label {
+                    padding-bottom: 1rem;
+                    padding-left: 0.5rem;
+                }
+                input {
+                    width: 70%;
+                    border-radius: 1.3rem;
+                    height: 45px;
+                    padding: 1rem;
+                    border-style: none;
+                    border: 1px solid black;
+                }
+            }
+            .botones {
+                .boton {
+                    display: flex;
+                    margin: auto;
+                    width: 100px;
+                    height: 50px;
+                    border-style: none;
+                    border: 2px solid $blanco;
+                    border-radius: 2rem;
+                    cursor: pointer;
+                    justify-content: center;
+                    align-items: center;
+                    color: $blanco;
+                }
+            }
+        }
+        .bg-img-login {
+            width: 50%;
+            min-height: 100%;
+            .img-login {
+                width: 100%;
+                height: 722.9px;
+                min-height: 100%;
+                background-image: url(../../img/diseno-logotipo-clasico-vintage-retro-label-badge-ropa-tela_668007-371-transformed.jpeg);
+                background-size: cover;
+                background-position: center;
+            }
+        }
+    }
+}
+
+footer {
+    margin-top: 0;
+}

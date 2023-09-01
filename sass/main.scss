@@ -1,0 +1,292 @@
+@import "utility/colors.scss";
+//Reset
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    min-height: 100%;
+    background-color: #151212;
+}
+
+header {
+    .header-1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $blanco;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        .logo {
+            img {
+                height: 100px;
+                width: 100px;
+            }
+        }
+        .sociales-header {
+            display: flex;
+            gap: 2rem;
+            svg {
+                width: 30px;
+                height: 30px;
+            }
+        }
+        .carrito {
+            display: flex;
+            gap: 2rem;
+            svg {
+                width: 25px;
+                height: 30px;
+            }
+            a {
+                text-decoration: none;
+                color: #151212;
+            }
+        }
+    }
+    .header-2 {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 1rem;
+        padding-right: 3rem;
+        background-color: #151212;
+        border-bottom: 1px solid $blanco;
+        a {
+            text-decoration: none;
+            color: $blanco;
+        }
+        .navbar-2 {
+            width: 300px;
+            height: 100%;
+            a:hover {
+                scale: 1.1;
+                transition: 1s;
+            }
+            nav {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                height: 100%;
+                padding: 1rem;
+            }
+            .nav-drop {
+                background-color: #151212;
+            }
+        }
+        .search {
+            min-height: 100%;
+            input {
+                height: 100%;
+                background-color: #383737;
+                width: 300px;
+                border: none;
+                padding: 1rem;
+            }
+            button {
+                width: 30px;
+                height: 99%;
+                background-color: #383737;
+                color: $blanco;
+                border: none;
+                padding: 0.1rem;
+                padding-right: 0.5rem;
+                margin-left: -1rem;
+            }
+        }
+    }
+    .carrusel {
+        max-height: 700px;
+        img {
+            max-height: 700px;
+        }
+    }
+}
+
+.contenedor {
+    max-width: 1250px;
+    margin: auto;
+    padding: 1rem;
+}
+
+.box-info {
+    width: 70%;
+    height: 130px;
+    background-color: $blanco;
+    margin: 2rem auto 2rem auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    align-items: center;
+    border-radius: 1rem;
+    .info-box {
+        display: flex;
+        gap: 1rem;
+        width: 30%;
+        font-weight: bold;
+        color: #151212;
+    }
+    .icon-box {
+        svg {
+            width: 40px;
+            height: 40px;
+        }
+    }
+}
+
+.titulo-productos-inicio {
+    color: $blanco;
+}
+
+.all-productos-inicio {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 5rem;
+}
+
+.producto {
+    background-color: #383737;
+    width: 300px;
+    height: 520px;
+    color: $blanco;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    .desc-producto {
+        padding-left: 1rem;
+    }
+    img {
+        min-width: 100%;
+        min-height: 350px;
+        max-height: 350px;
+    }
+    .btn-productos {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: $blanco;
+        width: 100%;
+        height: 30px;
+        a {
+            color: #151212;
+        }
+        a:hover {
+            color: #151212;
+        }
+    }
+}
+
+.btn-all-productos {
+    text-align: center;
+    width: 100%;
+    a {
+        color: #151212;
+        background-color: teal;
+        border: 1px solid #151212;
+        padding-left: 4rem;
+        padding-right: 4rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        font-weight: bold;
+    }
+}
+
+.categorias-inicio {
+    display: flex;
+    gap: 3rem;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5rem;
+    .categoria {
+        max-width: 300px;
+        max-height: 410px;
+        img {
+            min-width: 300px;
+            max-height: 300px;
+        }
+        p {
+            display: flex;
+            color: $blanco;
+            text-align: center;
+            background-color: #383737;
+            height: 50px;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+footer {
+    margin-top: auto;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    color: #151212;
+    background-color: $blanco;
+    .footer {
+        display: flex;
+        justify-content: space-evenly;
+        .icon-footer {
+            display: flex;
+            gap: 2rem;
+            svg {
+                width: 30px;
+                height: 30px;
+            }
+        }
+        .nav-footer {
+            .barra-footer {
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+                align-items: start;
+                a {
+                    color: #151212;
+                }
+            }
+        }
+        h4 {
+            font-size: x-large;
+            font-weight: bold;
+        }
+        .medios-de-pago {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            width: 300px;
+            margin-top: 2rem;
+        }
+        .form-index {
+            margin-top: 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            input {
+                border: 1px solid #151212;
+                background-color: #383737;
+                height: 40px;
+                padding: 1rem;
+            }
+        }
+    }
+    .derechos {
+        background-color: #383737;
+        color: $blanco;
+        text-align: center;
+        height: 50px;
+        padding-top: 1rem
+    }
+}
+
+@import "pages/productos.scss";
+@import "pages/contacto.scss";
+@import "pages/login.scss";

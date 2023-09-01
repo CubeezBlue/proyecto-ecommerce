@@ -1,0 +1,64 @@
+@import "../utility/colors.scss";
+.contacto {
+    display: flex;
+    gap: 4rem;
+    .info-contacto {
+        margin-top: 1rem;
+        form {
+            display: grid;
+            grid-template-columns: 2;
+            grid-template-rows: 4;
+            column-gap: 3rem;
+            row-gap: 2rem;
+            max-width: 70%;
+        }
+        min-width: 50%;
+        margin: auto;
+        padding-left: 8rem;
+        .form-apellido {
+            grid-row: 1;
+            grid-column: 2;
+        }
+        .form-email {
+            grid-row: 2;
+            grid-column: span 2;
+        }
+        .form-consulta {
+            grid-row: 3;
+            grid-column: span 2;
+            #consulta {
+                width: 100%;
+                border-radius: 1rem;
+                padding: 1rem;
+            }
+        }
+        .btn-form {
+            grid-row: 4;
+            grid-column: span 2;
+            height: 50px;
+            border: none;
+            border-radius: 1rem;
+            background-color: teal;
+            margin-bottom: 2rem;
+        }
+        input {
+            width: 100%;
+            height: 40px;
+            border-radius: 1rem;
+            padding: 1rem;
+        }
+        label {
+            color: $blanco;
+        }
+    }
+    .contenedor-mapa {
+        min-width: 50%;
+        height: 600px;
+        .mapa {
+            width: 600px;
+            height: 522px;
+            margin: auto;
+            margin-top: 2rem;
+        }
+    }
+}
