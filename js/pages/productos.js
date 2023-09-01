@@ -6,7 +6,7 @@ const carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 productos.forEach(p => {
     const div = document.createElement("div");
     div.classList.add("producto")
-    div.innerHTML = `<img src="${p.img}" alt="">
+    div.innerHTML = `<img src="../${p.img}" alt="">
     <div class="desc-producto">
         <p>${p.nombre}</p>
         <P>3 cuotas sin interes</P>

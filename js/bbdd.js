@@ -26,7 +26,7 @@ export const productos = [{
         descripcion: "Buzo Nike negro, con pipeta roja. Material de algodon, super abrigado.",
         precio: 26750,
         precioTotal: 1,
-        img: "../img/buzo-nike.webp",
+        img: "img/buzo-nike.webp",
         cantidad: 1
     },
     {
@@ -35,7 +35,7 @@ export const productos = [{
         descripcion: "Remera Adidas edicion orginals, con estampado de flores, color blanca, pipeta negra",
         precio: 13200,
         precioTotal: 1,
-        img: "../img/remera-adidas.jpeg",
+        img: "img/remera-adidas.jpeg",
         cantidad: 1
     },
     {
@@ -44,7 +44,7 @@ export const productos = [{
         descripcion: "Remera Nike Jordan, color negra con el logo de las zapatillas",
         precio: 11430,
         precioTotal: 1,
-        img: "../img/remera-jordan.jpeg",
+        img: "img/remera-jordan.jpeg",
         cantidad: 1
     },
     {
@@ -53,7 +53,7 @@ export const productos = [{
         descripcion: "Remera Nike estilo oversize urbana, color azul oscuro",
         precio: 14300,
         precioTotal: 1,
-        img: "../img/remera-nike-oversize.jpg",
+        img: "img/remera-nike-oversize.jpg",
         cantidad: 1
     },
     {
@@ -62,7 +62,7 @@ export const productos = [{
         descripcion: "Buzo Adidas Rojo, version originals, clasico para todo tipo de evento",
         precio: 21900,
         precioTotal: 1,
-        img: "../img/buzo-adidas.jpeg",
+        img: "img/buzo-adidas.jpeg",
         cantidad: 1
     },
     {
@@ -71,7 +71,7 @@ export const productos = [{
         descripcion: "Pantalon Adidas Original, tela depotiva. Perfecto para ejericio",
         precio: 16450,
         precioTotal: 1,
-        img: "../img/pantalon-adidas.jpeg",
+        img: "img/pantalon-adidas.jpeg",
         cantidad: 1
     },
     {
@@ -80,14 +80,14 @@ export const productos = [{
         descripcion: "Pantalon Nike, tela de algodon.",
         precio: 11340,
         precioTotal: 1,
-        img: "../img/pantalon-nike.jpeg",
+        img: "img/pantalon-nike.jpeg",
         cantidad: 1
     }, {
         id: 8,
         nombre: "Campera Adidas Retro",
         descripcion: "Campera Adidas Originals, modelo retro color violeta",
         precio: 12100,
-        img: "../img/campera-adidas.jpg",
+        img: "img/campera-adidas.jpg",
         cantidad: 1
     }, {
         id: 9,
@@ -95,7 +95,7 @@ export const productos = [{
         descripcion: "Campera Nike Retro/Vintage, edicion limitada",
         precio: 17400,
         precioTotal: 1,
-        img: "../img/campera-nike.webp",
+        img: "img/campera-nike.webp",
         cantidad: 1
     },
     {
@@ -104,7 +104,7 @@ export const productos = [{
         descripcion: "Zapatilla Adidas, version Orginals color mostaza, estilo retro.",
         precio: 40700,
         precioTotal: 1,
-        img: "../img/zapatilla-adidas.webp",
+        img: "img/zapatilla-adidas.webp",
         cantidad: 1
     }
 
