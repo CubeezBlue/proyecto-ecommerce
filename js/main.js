@@ -1,3 +1,25 @@
+import { productos } from './bbdd.js';
+//Productos Index
+const allProductsIndex = document.querySelector("#productos-index");
+productos.some(p => {
+    const div = document.createElement("div");
+    div.classList.add("producto")
+    div.innerHTML = `<img src="${p.img}" alt="">
+        <div class="desc-producto">
+            <p>${p.nombre}</p>
+            <P>3 cuotas sin interes</P>
+            <p>$${p.precio}</p>
+        </div>
+        <div class="btn-productos" id="contenedor-${p.id}">
+            <a href="pages/productos.html">Detalle</a>
+        </div>`
+    allProductsIndex.appendChild(div);
+    return p.id === 4;
+})
+
+
+
+// Carrito
 const carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
 const btnVerCarrito = document.querySelector("#carrito");
