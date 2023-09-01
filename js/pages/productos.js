@@ -62,7 +62,7 @@ btnVerCarrito.addEventListener("click", () => {
             const divProducto = document.createElement("div");
             divProducto.classList.add("producto-carrito");
             divProducto.innerHTML = `
-        <img src="${p.img}" alt="">
+        <img src="../${p.img}" alt="">
         <div class="desc-producto">
             <p>${p.nombre}</p>
             <P>3 cuotas sin interes</P>
