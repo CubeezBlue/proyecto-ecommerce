@@ -47,6 +47,11 @@ btnVerCarrito.addEventListener("click", () => {
                 carrito.splice(index, 1);
                 localStorage.setItem("carrito", JSON.stringify(carrito));
                 carritoContenedor.removeChild(divProducto);
+                let totalCarritoPrecio = 0;
+                carrito.forEach(p => {
+                    totalCarritoPrecio += p.precioTotal;
+                    totalCarrito.innerHTML = `EL TOTAL DE SU COMPRA ES DE $${totalCarritoPrecio}`
+                })
             }
         });
 
