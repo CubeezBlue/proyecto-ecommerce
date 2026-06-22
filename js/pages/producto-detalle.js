@@ -1,8 +1,10 @@
 import { productos } from './../bbdd.js';
 import { initCarrito } from './../carrito.js';
 import { initHeader } from './../auth.js';
+import { initSearchRedirect } from './../search.js';
 
 initHeader('../');
+initSearchRedirect('../');
 
 const { agregarProducto } = initCarrito('../');
 

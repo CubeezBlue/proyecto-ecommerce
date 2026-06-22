@@ -716,10 +716,14 @@ h2 + span {
   background: var(--accent-light);
   border: 1px solid var(--accent);
   border-radius: var(--radius-sm);
-  color: #ffffff;
+  color: #ffffff !important;
   font-size: 1.05rem;
   text-align: center;
   font-weight: 700;
+}
+
+.bg-carrito-html .bg-carrito .total-carrito strong {
+  color: #ffffff;
 }
 
 /* ── Badge carrito ── */

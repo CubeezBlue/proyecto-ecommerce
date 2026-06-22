@@ -1,13 +1,14 @@
 import { productos } from './../bbdd.js';
 import { initCarrito } from './../carrito.js';
 import { initHeader } from './../auth.js';
+import { initProductSearch } from './../search.js';
 
 initHeader('../');
-
-const allProducts = document.querySelector("#todos-productos");
 const { agregarProducto } = initCarrito('../');
 
-productos.forEach(p => {
+const allProducts = document.querySelector("#todos-productos");
+
+function crearTarjeta(p) {
     const div = document.createElement("div");
     div.classList.add("producto");
     div.innerHTML = `
@@ -22,7 +23,6 @@ productos.forEach(p => {
         <div class="btn-productos" id="contenedor-${p.id}">
             <a class="btn-agregar">Agregar al carrito</a>
         </div>`;
-    allProducts.appendChild(div);
 
     div.querySelector(".btn-agregar").addEventListener("click", () => {
         agregarProducto(p);
@@ -30,4 +30,13 @@ productos.forEach(p => {
         btn.textContent = "✓ Agregado";
         setTimeout(() => { btn.textContent = "Agregar al carrito"; }, 1200);
     });
-});
+
+    return div;
+}
+
+function renderProductos(lista) {
+    allProducts.innerHTML = "";
+    lista.forEach(p => allProducts.appendChild(crearTarjeta(p)));
+}
+
+initProductSearch(productos, renderProductos);
