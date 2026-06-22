@@ -15,7 +15,8 @@ productos.forEach(p => {
             <p>$${p.precio.toFixed(2)}</p>
         </div>
         <div class="btn-productos" id="contenedor-${p.id}">
-            <a class="btn-agregar">Agregar al carrito</a>
+            <a href="producto-detalle.html?id=${p.id}" class="btn-detalle">Ver detalle</a>
+            <a class="btn-agregar">Agregar</a>
         </div>`;
     allProducts.appendChild(div);
 

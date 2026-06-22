@@ -16,7 +16,7 @@ productos.slice(0, 4).forEach(p => {
             <p>$${p.precio.toFixed(2)}</p>
         </div>
         <div class="btn-productos" id="contenedor-${p.id}">
-            <a href="pages/productos.html">Ver detalle</a>
+            <a href="pages/producto-detalle.html?id=${p.id}" class="btn-detalle">Ver detalle</a>
             <a class="btn-agregar-index">Agregar</a>
         </div>`;
     allProductsIndex.appendChild(div);
