@@ -1,5 +1,8 @@
 import { productos } from './bbdd.js';
 import { initCarrito } from './carrito.js';
+import { initHeader } from './auth.js';
+
+initHeader('');
 
 // Mostrar primeros 4 productos en el index con botón agregar
 const allProductsIndex = document.querySelector("#productos-index");
@@ -9,15 +12,16 @@ productos.slice(0, 4).forEach(p => {
     const div = document.createElement("div");
     div.classList.add("producto");
     div.innerHTML = `
-        <img src="${p.img}" alt="${p.nombre}">
-        <div class="desc-producto">
-            <p>${p.nombre}</p>
-            <p class="cuotas">3 cuotas sin interés</p>
-            <p>$${p.precio.toFixed(2)}</p>
-        </div>
+        <a href="pages/producto-detalle.html?id=${p.id}" class="producto-link">
+            <img src="${p.img}" alt="${p.nombre}">
+            <div class="desc-producto">
+                <p>${p.nombre}</p>
+                <p class="cuotas">3 cuotas sin interés</p>
+                <p class="precio-producto">$${p.precio.toLocaleString('es-AR')}</p>
+            </div>
+        </a>
         <div class="btn-productos" id="contenedor-${p.id}">
-            <a href="pages/producto-detalle.html?id=${p.id}" class="btn-detalle">Ver detalle</a>
-            <a class="btn-agregar-index">Agregar</a>
+            <a class="btn-agregar-index">Agregar al carrito</a>
         </div>`;
     allProductsIndex.appendChild(div);
 

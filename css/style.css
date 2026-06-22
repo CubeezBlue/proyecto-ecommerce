@@ -336,6 +336,15 @@ header .carrusel img { max-height: 600px; width: 100%; object-fit: cover; }
   transition: var(--transition);
 }
 
+/* Link que cubre imagen + descripción de la tarjeta */
+.producto-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  flex: 1;
+  overflow: hidden;
+}
+
 /* Botón "Ver detalle" */
 .btn-detalle {
   background: transparent;
@@ -703,13 +712,14 @@ h2 + span {
 }
 
 .bg-carrito-html .bg-carrito .total-carrito {
-  padding: 1rem;
-  background: var(--card);
+  padding: 1rem 1.2rem;
+  background: var(--accent-light);
+  border: 1px solid var(--accent);
   border-radius: var(--radius-sm);
-  color: var(--light);
-  font-size: 1rem;
+  color: #ffffff;
+  font-size: 1.05rem;
   text-align: center;
-  border-top: 1px solid rgba(255,255,255,0.08);
+  font-weight: 700;
 }
 
 /* ── Badge carrito ── */
@@ -1219,6 +1229,60 @@ h2 + span {
 }
 
 .btn-volver:hover { color: var(--light); }
+
+/* ══════════════════════════════
+   AUTH / USUARIO
+══════════════════════════════ */
+.usuario-nombre {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.btn-logout {
+  font-size: 0.82rem;
+  color: #888 !important;
+  border-bottom: 1px solid transparent;
+  transition: var(--transition);
+}
+
+.btn-logout:hover {
+  color: var(--danger) !important;
+  border-color: var(--danger);
+}
+
+.login-link {
+  font-size: 0.82rem;
+  color: rgba(255,255,255,0.45);
+  text-align: center;
+}
+
+.login-link a {
+  color: var(--accent);
+  font-weight: 600;
+  transition: var(--transition);
+}
+
+.login-link a:hover { color: #00c0c0; }
+
+.form-msg {
+  font-size: 0.85rem;
+  padding: 0.6rem 1rem;
+  border-radius: var(--radius-xs);
+  font-weight: 600;
+}
+
+.form-msg--error {
+  background: rgba(231,76,60,0.15);
+  color: #ff6b5b;
+  border: 1px solid rgba(231,76,60,0.3);
+}
+
+.form-msg--success {
+  background: rgba(46,204,113,0.15);
+  color: #2ecc71;
+  border: 1px solid rgba(46,204,113,0.3);
+}
 
 /* ══════════════════════════════
    RESPONSIVE — TABLET

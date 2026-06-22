@@ -1,5 +1,8 @@
 import { productos } from './../bbdd.js';
 import { initCarrito } from './../carrito.js';
+import { initHeader } from './../auth.js';
+
+initHeader('../');
 
 const { agregarProducto } = initCarrito('../');
 

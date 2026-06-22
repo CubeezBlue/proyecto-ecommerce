@@ -106,8 +106,12 @@ export function initCarrito(imgPrefix = '') {
         actualizarVista();
     });
 
-    btnCerrar.addEventListener("click", () => {
-        bgCarrito.classList.add("d-none");
+    const cerrarCarrito = () => bgCarrito.classList.add("d-none");
+
+    btnCerrar.addEventListener("click", cerrarCarrito);
+
+    bgCarrito.addEventListener("click", (e) => {
+        if (!e.target.closest(".bg-carrito")) cerrarCarrito();
     });
 
     const btnComprar = document.querySelector("#btn-comprar");
