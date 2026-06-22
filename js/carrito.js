@@ -106,13 +106,14 @@ export function initCarrito(imgPrefix = '') {
         actualizarVista();
     });
 
+    const panelCarrito = document.querySelector(".bg-carrito");
     const cerrarCarrito = () => bgCarrito.classList.add("d-none");
 
     btnCerrar.addEventListener("click", cerrarCarrito);
 
-    bgCarrito.addEventListener("click", (e) => {
-        if (!e.target.closest(".bg-carrito")) cerrarCarrito();
-    });
+    panelCarrito.addEventListener("click", (e) => e.stopPropagation());
+
+    bgCarrito.addEventListener("click", cerrarCarrito);
 
     const btnComprar = document.querySelector("#btn-comprar");
     if (btnComprar) {
